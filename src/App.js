@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Head } from './Navigation';
-import { Cards } from './Card';
 import { Foot } from './Foot';
+import  SwitchBoard  from './SwitchBoard'
 import './App.css';
-
-
-
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
   class App extends Component {
 
       render() {
         return (
-          <container>
-            <Head />
-            <Cards />
-            <Foot />
-          </container>
+          <Router>
+           <div>
+             <Head />
+             <SwitchBoard />
+             <Foot />
+           </div>
+          </Router>
         );
       }
     }
